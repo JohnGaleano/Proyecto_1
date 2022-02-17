@@ -22,19 +22,17 @@
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.391"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        style="@style/TableLayout">
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:visibility="visible">
+            style="@style/TableRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <Button
                 android:id="@+id/button1"
@@ -54,13 +52,10 @@
             <Button
                 android:id="@+id/Icon1"
                 style="@style/Button"
-                android:text="Icon1" />
+                android:text="Cl" />
         </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:visibility="visible">
+        <TableRow style="@style/TableRow">
 
             <Button
                 android:id="@+id/button4"
@@ -75,18 +70,20 @@
             <Button
                 android:id="@+id/button6"
                 style="@style/Button"
-                android:text="SQRT(2)" />
+                android:text="SQ(2)" />
 
             <Button
                 android:id="@+id/Icon2"
                 style="@style/Button"
+                android:padding="0dp"
+                android:paddingLeft="0dp"
+                android:paddingTop="0dp"
+                android:paddingRight="0dp"
+                android:paddingBottom="0dp"
                 android:text="/" />
         </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:visibility="visible">
+        <TableRow style="@style/TableRow">
 
             <Button
                 android:id="@+id/button7"
@@ -110,9 +107,9 @@
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:visibility="visible">
+            style="@style/TableRow"
+            android:layout_width="187dp"
+            android:layout_height="35dp">
 
             <Button
                 android:id="@+id/button10"
@@ -136,9 +133,9 @@
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:visibility="visible">
+            style="@style/TableRow"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
 
             <Button
                 android:id="@+id/button13"
@@ -161,10 +158,7 @@
                 android:text="+" />
         </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:visibility="visible">
+        <TableRow style="@style/TableRow">
 
             <Button
                 android:id="@+id/button16"
@@ -185,9 +179,7 @@
             <Button
                 android:id="@+id/Icon6"
                 style="@style/Button"
-                android:layout_width="95dp"
-                android:layout_height="65dp"
-                android:text="ENTR" />
+                android:text="E" />
         </TableRow>
 
     </TableLayout>
@@ -203,6 +195,7 @@
         android:id="@+id/constraintLayout"
         android:layout_width="350dp"
         android:layout_height="100dp"
+        android:background="#A8A8A8"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.322"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
