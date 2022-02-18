@@ -35,7 +35,7 @@
             <Button
                 android:id="@+id/button1"
                 style="@style/Button"
-                android:text="%"/>
+                android:text="%" />
 
             <Button
                 android:id="@+id/button2"
