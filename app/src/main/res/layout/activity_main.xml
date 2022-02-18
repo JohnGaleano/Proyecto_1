@@ -35,12 +35,11 @@
             <Button
                 android:id="@+id/button1"
                 style="@style/Button"
-                android:text="%" />
+                android:text="%"/>
 
             <Button
                 android:id="@+id/button2"
                 style="@style/Button"
-                android:layout_height="match_parent"
                 android:text="C" />
 
             <Button
@@ -74,11 +73,6 @@
             <Button
                 android:id="@+id/Icon2"
                 style="@style/Button"
-                android:padding="0dp"
-                android:paddingLeft="0dp"
-                android:paddingTop="0dp"
-                android:paddingRight="0dp"
-                android:paddingBottom="0dp"
                 android:text="/" />
         </TableRow>
 
@@ -87,8 +81,7 @@
             <Button
                 android:id="@+id/button7"
                 style="@style/Number"
-                android:text="7"
-                android:textStyle="bold" />
+                android:text="7"/>
 
             <Button
                 android:id="@+id/button8"
@@ -159,8 +152,7 @@
             <Button
                 android:id="@+id/button16"
                 style="@style/Number"
-                android:text="+/-"
-                android:visibility="visible" />
+                android:text="+/-"/>
 
             <Button
                 android:id="@+id/button17"
