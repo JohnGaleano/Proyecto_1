@@ -30,9 +30,7 @@
         style="@style/TableLayout">
 
         <TableRow
-            style="@style/TableRow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            style="@style/TableRow">
 
             <Button
                 android:id="@+id/button1"
@@ -42,6 +40,7 @@
             <Button
                 android:id="@+id/button2"
                 style="@style/Button"
+                android:layout_height="match_parent"
                 android:text="C" />
 
             <Button
@@ -88,7 +87,8 @@
             <Button
                 android:id="@+id/button7"
                 style="@style/Number"
-                android:text="7" />
+                android:text="7"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/button8"
@@ -107,9 +107,7 @@
         </TableRow>
 
         <TableRow
-            style="@style/TableRow"
-            android:layout_width="187dp"
-            android:layout_height="35dp">
+            style="@style/TableRow">
 
             <Button
                 android:id="@+id/button10"
@@ -133,9 +131,7 @@
         </TableRow>
 
         <TableRow
-            style="@style/TableRow"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content">
+            style="@style/TableRow">
 
             <Button
                 android:id="@+id/button13"
