@@ -6,23 +6,197 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="395dp" />
 
-    <Button
-        android:id="@+id/button"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="120dp"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="52dp" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        style="@style/TableLayout">
+
+        <TableRow
+            style="@style/TableRow">
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/Button"
+                android:text="%" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/Button"
+                android:layout_height="match_parent"
+                android:text="C" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/Button"
+                android:text="CE" />
+
+            <Button
+                android:id="@+id/Icon1"
+                style="@style/Button"
+                android:text="Cl" />
+        </TableRow>
+
+        <TableRow style="@style/TableRow">
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/Button"
+                android:text="1/X" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/Button"
+                android:text="x2" />
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/Button"
+                android:text="SQ(2)" />
+
+            <Button
+                android:id="@+id/Icon2"
+                style="@style/Button"
+                android:padding="0dp"
+                android:paddingLeft="0dp"
+                android:paddingTop="0dp"
+                android:paddingRight="0dp"
+                android:paddingBottom="0dp"
+                android:text="/" />
+        </TableRow>
+
+        <TableRow style="@style/TableRow">
+
+            <Button
+                android:id="@+id/button7"
+                style="@style/Number"
+                android:text="7"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button8"
+                style="@style/Number"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/button9"
+                style="@style/Number"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/Icon3"
+                style="@style/Button"
+                android:text="*" />
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRow">
+
+            <Button
+                android:id="@+id/button10"
+                style="@style/Number"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/button11"
+                style="@style/Number"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/button12"
+                style="@style/Number"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/Icon4"
+                style="@style/Button"
+                android:text="-" />
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRow">
+
+            <Button
+                android:id="@+id/button13"
+                style="@style/Number"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/button14"
+                style="@style/Number"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/button15"
+                style="@style/Number"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/Icon5"
+                style="@style/Button"
+                android:text="+" />
+        </TableRow>
+
+        <TableRow style="@style/TableRow">
+
+            <Button
+                android:id="@+id/button16"
+                style="@style/Number"
+                android:text="+/-"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/button17"
+                style="@style/Number"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/button18"
+                style="@style/Number"
+                android:text="." />
+
+            <Button
+                android:id="@+id/Icon6"
+                style="@style/Button"
+                android:text="E" />
+        </TableRow>
+
+    </TableLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:background="#A8A8A8"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline3">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
