@@ -167,7 +167,8 @@
             <Button
                 android:id="@+id/Icon6"
                 style="@style/Button"
-                android:text="E" />
+                android:backgroundTint="#8EC6F3"
+                android:text="=" />
         </TableRow>
 
     </TableLayout>
@@ -181,13 +182,11 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="350dp"
-        android:layout_height="100dp"
-        android:background="#A8A8A8"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.322"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toTopOf="@+id/guideline3">
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        style="@style/MainLayout">
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

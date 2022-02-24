@@ -15,13 +15,15 @@
     </style>
 
     <style name="Button">
-        <item name="android:layout_width">85dp</item>
+        <item name="android:layout_width">89dp</item>
         <item name="android:layout_weight">0.5</item>
         <item name="android:layout_height">70dp</item>
         <item name="android:insetTop">0dp</item>
         <item name="android:insetBottom">0dp</item>
         <item name="android:textStyle"> bold</item>
-        <item name="android:background">#ffffff</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:backgroundTint">#CCCCCC</item>
+        <item name="android:paddingRight">15dp</item>
     </style>
 
     <style name="Number">
@@ -30,8 +32,14 @@
         <item name="android:layout_height">70dp</item>
         <item name="android:insetTop">0dp</item>
         <item name="android:insetBottom">0dp</item>
-        <item name="android:background">@drawable/border</item>
-        <item name="android:textStyle"> bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MainLayout">
+        <item name="android:layout_width">350dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:background">#EAEAEA</item>
     </style>
 
 </resources>
