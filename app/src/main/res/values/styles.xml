@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="ResLayout">
+        <item name="android:layout_width">350dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:background">?attr/colorPrimaryVariant</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textAlignment">viewEnd</item>
+    </style>
+
     <style name="TableLayout">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -22,24 +30,25 @@
         <item name="android:insetBottom">0dp</item>
         <item name="android:textStyle"> bold</item>
         <item name="android:textSize">16sp</item>
-        <item name="android:backgroundTint">#CCCCCC</item>
         <item name="android:paddingRight">15dp</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
-    <style name="Number">
-        <item name="android:layout_width">85dp</item>
-        <item name="android:layout_weight">0.5</item>
-        <item name="android:layout_height">70dp</item>
-        <item name="android:insetTop">0dp</item>
-        <item name="android:insetBottom">0dp</item>
-        <item name="android:textStyle">bold</item>
+    <style name="Equal" parent="Button" >
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">?attr/colorSecondaryVariant</item>
+    </style>
+
+    <style name="Number" parent="Button">
+        <item name="android:backgroundTint">?attr/colorPrimary</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style parent="Button" name="Icon">
         <item name="android:textSize">16sp</item>
+        <item name="android:backgroundTint">?attr/colorSecondary</item>
     </style>
 
-    <style name="MainLayout">
-        <item name="android:layout_width">350dp</item>
-        <item name="android:layout_height">100dp</item>
-        <item name="android:background">#EAEAEA</item>
-    </style>
 
 </resources>
