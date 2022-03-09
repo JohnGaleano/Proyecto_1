@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         Button eql0 = findViewById(R.id.eql);
     }
 
-    public void onClick(View view)
+    public void number(View view)
     {
         String lbl;
         Button b = (Button)view;

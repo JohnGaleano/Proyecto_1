@@ -107,7 +107,6 @@
             <Button
                 android:id="@+id/n4"
                 style="@style/Number"
-                android:onClick="onClick"
                 android:text="4" />
 
             <Button

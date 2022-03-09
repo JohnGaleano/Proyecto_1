@@ -44,6 +44,7 @@
     <style name="Number" parent="Button">
         <item name="android:backgroundTint">?attr/colorPrimary</item>
         <item name="android:textColor">@color/black</item>
+        <item name="android:onClick">number</item>
     </style>
 
     <style parent="Button" name="Icon">
